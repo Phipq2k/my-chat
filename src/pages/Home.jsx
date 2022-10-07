@@ -259,7 +259,7 @@ function HomePage(props) {
         setDisabled(true);
       })
       .catch((err) => {
-        window.alert(err.data.message);
+        window.alert("Thay đổi không thành công");
       });
   };
 
@@ -355,7 +355,7 @@ function HomePage(props) {
                         src={
                           user.user_avatar
                             ? `${apiURL.default}${apiURL.file.avatar.show}${user.user_avatar}`
-                            : link.defaultAvatar
+                            : link.images + "ricado1.jpg"
                         }
                         alt={user.user_name}
                       />
@@ -434,7 +434,7 @@ function HomePage(props) {
                   src={
                     my?.user_avatar
                       ? `${apiURL.default}${apiURL.file.avatar.show}${my.user_avatar}`
-                      : link.defaultAvatar
+                      : link.images + "tokuda1.jpg"
                   }
                   alt=""
                 />
@@ -518,7 +518,7 @@ function HomePage(props) {
                         src={
                           partner.user_avatar
                             ? `${apiURL.default}${apiURL.file.avatar.show}${partner.user_avatar}`
-                            : link.defaultAvatar
+                            : link.images + "tokuda1.jpg"
                         }
                         alt="avatar"
                       />

@@ -42,7 +42,7 @@ export default function Conversation({
           src={
             user.user_avatar
               ? `${apiURL.default}${apiURL.file.avatar.show}${user.user_avatar}`
-              : link.defaultAvatar
+              : link.images + "tokuda1.jpg"
           }
           alt="avatar"
         />

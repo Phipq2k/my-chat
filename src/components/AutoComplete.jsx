@@ -19,7 +19,7 @@ function AutoComplete({
 
   return (
     <>
-   {keyword && (props[type].length ?  <div style={style} className="autocompleteContainer" onClick={handleClick}>
+   {props[type].length ?  <div style={style} className="autocompleteContainer" onClick={handleClick}>
       {props[type]?.map((v, i) => {
         return (
           <div className="autocompleteItem" key={i}>
@@ -27,7 +27,7 @@ function AutoComplete({
           </div>
         );
       })}
-    </div> : 'Không tìm thấy kết quả')}
+    </div> : ''}
     </>
   );
 }

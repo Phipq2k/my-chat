@@ -5,7 +5,7 @@ import { AuthActionType } from "../actions/auth-action";
 const error = {
   show: false,
   type: ToastType.ERROR,
-  message: "Mất kết nối đến server",
+  message: "",
 };
 
 const toastReducer = (state = error, action) => {

@@ -24,7 +24,7 @@ function Message({ own, message, ...props }) {
             src={
               message.sender.user_avatar
                 ? `${apiURL.default}${apiURL.file.avatar.show}${message.sender.user_avatar}`
-                : link.defaultAvatar
+                : link.images + "tokuda1.jpg"
             }
             alt="avatar"
           />

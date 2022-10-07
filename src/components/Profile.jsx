@@ -81,7 +81,7 @@ function Profile({ user,onUpdate, ...props }) {
             src={
               currentUser.user_avatar
                 ? `${apiURL.default}${apiURL.file.avatar.show}${currentUser.user_avatar}`
-                : link.defaultAvatar
+                : link.images + "ricado1.jpg"
             }
             alt=""
           />
