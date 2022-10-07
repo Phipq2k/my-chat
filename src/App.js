@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import AuthRouter from "./components/AuthRouter";
 import PrivateRouter from "./components/PrivateRouter";
 import Toast from "./components/Toast";
@@ -30,7 +30,7 @@ function App(props) {
   return (
     <div className="App">
       {toast.show && <Toast type={toast.type} toast={toast} />}{" "}
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route
             element={
@@ -60,7 +60,7 @@ function App(props) {
             ></Route>
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
